@@ -1,0 +1,194 @@
+:root{
+    --typebody:Arial, Helvetica, sans-serif;
+    --typetittle: 'Pattaya', sans-serif;
+    --starcolor: #FF4D71;
+}
+body{
+    font-family: var(--typebody);
+    margin: 0;
+}
+
+header{
+    max-height: 15vh;
+    width: 100%;
+    background-color: white;
+    font-family: var(--typebody);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+header div img.Logo{
+    width: auto;
+    height: 6vh;
+    margin: 0;
+    padding: 10px;
+}
+header div img.instruction{
+    position: absolute;
+    top: 7vh;
+    left: 4vh;
+    height: 17vh;
+    animation-name: instruction;
+    animation-duration: 2s;
+ }
+nav a{
+    float: right;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    padding:  15px 10px;
+    font-size: 15px;
+}
+nav a:hover{
+    background-color: var(--starcolor);
+    text-align: justify;
+    text-decoration: line-through;
+    color: black;
+    margin: 0;
+}
+nav a:link,nav a:visited{
+    color: black;
+}
+.navigation ul {
+    height: 10vh;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-family: var(--typetittle);
+    text-align: center;
+    padding: 10px 10px;
+    margin: 10px 0;
+}
+
+h2{
+    font-family: var(--typetittle);
+    text-align: center;
+    color:  var(--starcolor);
+    font-size: 25px;
+    margin: 5px;
+}
+
+h3{
+    font-family: var(--typetittle);
+    text-align: center;
+    color: var(--starcolor) ;
+    font-size: 22px;
+    margin: 0 0;
+}
+
+#infoContacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#infoContacto div{
+    display: flex;
+    margin: 0 25px;
+    padding: 5px;
+}
+
+#infoContacto div img{
+    max-width: 50px;
+    height: auto;
+    margin: 0 10px;
+}
+
+#form form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px;
+}
+
+div.column{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+div.row{
+    display: flex;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+
+.row div {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 10px 0 0;
+    max-width: 400px;
+}
+
+div input{
+    background-color: var(--starcolor);
+    color: white;
+}
+
+footer {
+    background-color: var(--starcolor);
+    color:white;
+    padding: 15px 0 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+footer h2{
+    color: white;
+    text-align: center;
+}
+footer p{
+    padding: 5px;
+    margin: 5px 5vw;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    border: 2px dotted white;
+    padding: 5px;
+}
+
+footer a:link, footer a:visited{
+    color: white;
+}
+
+@keyframes instruction{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+@media only screen and (min-width:920px){
+   #form  {
+        margin: 0 10vw 0 10vw;
+        max-width: 750px;
+    }
+    form div.row{
+        justify-content: center;
+        align-items: center;
+    }
+
+}

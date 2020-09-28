@@ -1,0 +1,209 @@
+:root{
+    --typebody:Arial, Helvetica, sans-serif;
+    --typetittle: 'Pattaya', sans-serif;
+    --starcolor: #FF4D71;
+}
+body{
+    font-family: var(--typebody);
+    margin: 0;
+}
+
+header{
+    max-height: 15vh;
+    width: 100%;
+    background-color: white;
+    font-family: var(--typebody);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+header div img.Logo{
+    width: auto;
+    height: 6vh;
+    margin: 0;
+    padding: 10px;
+}
+header div img.instruction{
+    position: absolute;
+    top: 7vh;
+    left: 4vh;
+    height: 17vh;
+    animation-name: instruction;
+    /*animation-delay: 2s;*/
+    animation-duration: 2s;
+}
+nav a{
+    float: right;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    padding:  15px 10px;
+    font-size: 15px;
+}
+nav a:hover{
+    background-color: var(--starcolor);
+    text-align: justify;
+    text-decoration: line-through;
+    color: black;
+    margin: 0;
+}
+nav a:link,nav a:visited{
+    color: black;
+}
+.navigation ul {
+    height: 10vh;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin: 10px 5vw;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h1 {
+    font-family: var(--typetittle);
+    text-align: center;
+    padding: 10px 10px;
+    margin: 10px 0;
+}
+
+h2{
+    font-family: var(--typetittle);
+    text-align: center;
+    color:  var(--starcolor);
+    font-size: 25px;
+    margin: 5px;
+}
+
+h3{
+    font-family: var(--typetittle);
+    text-align: center;
+    color: var(--starcolor) ;
+    font-size: 22px;
+    margin: 0 0;
+}
+p{
+    text-align: center;
+    font-size: 16px;
+}
+#AboutMe{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: left;
+    margin: 20px 0;
+}
+
+#AboutMe section{
+    margin: 10px 20px;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Imagen div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#Imagen div a{
+    background-color: var(--starcolor);
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#Imagen div a:link, #Imagen div a:visited{
+    color: white;
+}
+
+footer {
+    background-color: var(--starcolor);
+    color:white;
+    padding: 15px 0 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer h2{
+    color: white;
+    text-align: center;
+}
+footer p{
+    padding: 5px;
+    margin: 5px 5vw;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    border: 2px dotted white;
+    padding: 5px;
+}
+
+footer a:link, footer a:visited{
+    color: white;
+}
+
+@keyframes instruction{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+@media only screen and (min-width:650px) and (max-width:1200px){
+    article{
+        flex-wrap: nowrap;
+    }
+    #AboutMe div{
+        display: flex;
+    }
+    .half{
+        width: 40%;
+    }
+}
+@media only screen and (min-width:1200px){
+    article{
+        flex-wrap: nowrap;
+    }
+    main section#Imagen{
+        max-width: 400px;
+        margin: 20px 30px;
+        position: fixed;
+        left: 0;
+        top: 15vh;
+        border: 2px dotted var(--starcolor);
+        border-radius: 20px;
+        padding: 20px;
+    }
+    #AboutMe div{
+        display: flex;
+    }
+    .half{
+        width: 40%;
+    }
+    #AboutMe{
+        width: 70%;
+        margin: 20px 20px;
+        transform: translate(150px, 10px);
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet"></link>
+    <title>Contacto</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="index.html"><img src="./Imagenes/Logo.svg" alt="Logo Elena Frontiñan" class="Logo"></a>
+            <img src="./Imagenes/Click.svg" alt="" class="instruction">
+        </div>
+        <div>
+            <nav class="navigation">
+                <ul style="list-style-type:none;">
+                    <li> <a href="about.html">SOBRE MI</a></li>
+                    <!--<li> <a href="Works.html">TRABAJOS</a></li>-->
+                    <li> <a href="Contact.html">CONTACTO</a></li>
+                    <!--<li> <a href="">TAMBIÉN ME GUSTA</a></li>-->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h1> Mis datos de contacto </h1>
+        <article id="infoContacto">
+            <div>
+            <img src="./Imagenes/localización.PNG" alt="Dirección">
+            <p>Madrid,España </p>
+            </div>
+            <div>
+            <img src="./Imagenes/teléfono.PNG" alt="Teléfono">
+            <p>+34 669453477</p>
+            </div>
+            <div>
+            <img src="./Imagenes/Email.PNG" alt="Email">
+            <p>elenafronti@gmail.com</p>
+            </div>
+        </article>
+        <article id="form">
+            <form action="mailto:elenafronti@gmail.com" method="POST" enctype="text/plain">
+                <div class="row">
+                    <div>
+                        <label for="Name">Tu bonito nombre...</label>
+                        <input type="text" name="Name" id="Name">
+                    </div>
+                    <div>
+                        <label for="surname">...y tus apellidos </label>
+                        <input type="text" name="surname" id="surname">
+                    </div>
+                </div>
+                <div class="column">
+                    <label for="email">Un correo electrónico al que poder responder...</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="column">
+                    <label for="Message">...por último, ¿Qué me quieres decir? </label>
+                    <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </article>
+    </main>
+    
+    <footer>
+        <div>
+            <h2>¿Interesado?</h2>
+            <p>Si quieres saber más, puedes sumergirte en mis RRSS </p>
+
+            <a href="http://"><img src="" alt="Linkedin"></a>
+            <a href="http://"><img src="" alt="Medium"></a>
+        </div>
+    </footer>
+</body>
+</html>
